@@ -2,7 +2,7 @@
 Drake music card
 
 ## Demo
-[wait for link](http://no.link)
+[https://vko-online.github.io/drakecard/](https://vko-online.github.io/drakecard/)
 
 ## Screenshots
 ![http://i.imgur.com/62sjg72.png](http://i.imgur.com/62sjg72.png)
