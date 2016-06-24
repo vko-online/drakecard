@@ -1,0 +1,21 @@
+{
+  "name": "drakecard",
+  "authors": [
+    "Medet <medet.tleuk@dumontgroup.nyc>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "color-thief": "^2.0.1",
+    "jquery": "^3.0.0"
+  }
+}

@@ -1,0 +1,106 @@
+.card {
+  font-family: 'Avenir', "Helvetica Neue", Helvetic, sans-serif;
+  border-radius: 10px;
+  display: inline-block;
+  width: 400px;
+  color: #fff;
+  transition: .1s background ease;
+  background: #000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .card .img {
+    position: relative;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden; }
+    .card .img img {
+      width: 400px; }
+    .card .img .shadow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      top: 0;
+      left: 0; }
+  .card .list .content {
+    margin: 0;
+    padding: 10px 15px 0;
+    list-style: none; }
+    .card .list .content .item {
+      position: relative;
+      margin: 0 10px;
+      padding: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+      .card .list .content .item:last-child {
+        border-bottom: none; }
+      .card .list .content .item .header {
+        display: flex; }
+        .card .list .content .item .header .profile {
+          margin: 10px 0;
+          display: flex;
+          flex: 1;
+          align-items: center; }
+          .card .list .content .item .header .profile .avatar {
+            border-radius: 100%;
+            height: 40px;
+            width: 40px; }
+          .card .list .content .item .header .profile .display {
+            flex: 1;
+            margin-left: 10px; }
+        .card .list .content .item .header .date {
+          color: #9a9a9a;
+          display: flex;
+          align-items: center;
+          font-size: .8em; }
+          .card .list .content .item .header .date .action-alt {
+            margin: 0 5px;
+            font-size: 1.5em;
+            cursor: default; }
+      .card .list .content .item .body {
+        background: rgba(255, 255, 255, 0.2);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+        .card .list .content .item .body:hover .action .action-button {
+          color: inherit; }
+        .card .list .content .item .body img {
+          width: 50px;
+          height: 40px; }
+        .card .list .content .item .body .title {
+          flex: 1;
+          margin: 0 10px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden; }
+          .card .list .content .item .body .title big {
+            color: #9a9a9a; }
+          .card .list .content .item .body .title small {
+            color: #676767; }
+        .card .list .content .item .body .action {
+          margin-right: 10px; }
+          .card .list .content .item .body .action .action-button {
+            cursor: default;
+            color: transparent;
+            font-size: 40px;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            vertical-align: middle; }
+            .card .list .content .item .body .action .action-button.active {
+              color: inherit; }
+      .card .list .content .item .stats {
+        color: #676767;
+        padding: 20px 5px;
+        display: flex;
+        justify-content: space-around;
+        font-size: .9em; }
+        .card .list .content .item .stats .numbers {
+          cursor: default;
+          padding: 5px 10px;
+          border-radius: 10px; }
+          .card .list .content .item .stats .numbers:hover {
+            background-color: rgba(0, 0, 0, 0.1); }
+
+/*# sourceMappingURL=card.css.map */

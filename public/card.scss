@@ -1,0 +1,145 @@
+$border-radius: 10px;
+$color-alt: grey;
+$color-alt-light: lightgrey;
+$card_width: 400px;
+.card {
+  font-family: 'Avenir', "Helvetica Neue", Helvetic, sans-serif;
+  border-radius: $border-radius;
+  display: inline-block;
+  width: $card_width;
+  color: #fff;
+  transition: .1s background ease;
+  background: #000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  .img {
+    position: relative;
+    height: 200px;
+    border-radius: $border-radius;
+    overflow: hidden;
+    img {
+      width: $card_width;
+    }
+    .shadow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: $border-radius;
+      top: 0;
+      left: 0;
+    }
+  }
+  .list {
+    .content {
+      margin: 0;
+      padding: 10px 15px 0;
+      list-style: none;
+      .item {
+        position: relative;
+        margin: 0 10px;
+        padding: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+        &:last-child {
+          border-bottom: none;
+        }
+        .header {
+          display: flex;
+          .profile {
+            margin: 10px 0;
+            display: flex;
+            flex: 1;
+            align-items: center;
+            .avatar {
+              border-radius: 100%;
+              height: 40px;
+              width: 40px;
+            }
+            .display {
+              flex: 1;
+              margin-left: 10px;
+            }
+          }
+          .date {
+            color: lighten($color-alt, 10);
+            display: flex;
+            align-items: center;
+            font-size: .8em;
+
+            .action-alt {
+              margin: 0 5px;
+              font-size: 1.5em;
+              cursor: default;
+            }
+          }
+        }
+        .body {
+          background: rgba(255, 255, 255, .2);
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          &:hover {
+            .action {
+              .action-button{
+                color: inherit;
+              }
+            }
+          }
+          img {
+            width: 50px;
+            height: 40px;
+          }
+          .title {
+            flex: 1;
+            margin: 0 10px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+
+            big {
+              color: lighten($color-alt, 10);
+            }
+            small {
+              color: darken($color-alt, 10);
+            }
+          }
+          .action {
+            margin-right: 10px;
+
+            .action-button {
+              cursor: default;
+              color: transparent;
+              font-size: 40px;
+              height: 40px;
+              width: 40px;
+              text-align: center;
+              vertical-align: middle;
+
+              &.active {
+                color: inherit;
+              }
+            }
+          }
+        }
+        .stats {
+          color: darken($color-alt, 10);
+          padding: 20px 5px;
+          display: flex;
+          justify-content: space-around;
+          font-size: .9em;
+
+          .numbers {
+            cursor: default;
+            padding: 5px 10px;
+            border-radius: 10px;
+            &:hover {
+              background-color: rgba(0, 0, 0, .1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
